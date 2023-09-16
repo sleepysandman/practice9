@@ -1,0 +1,47 @@
+@charset "utf-8";
+body{
+    background-color: #34495E;
+}
+
+.master{
+    border: 1px solid red;
+    padding: 0.5% 0.5% 0% 0.5% ;
+    display: grid;
+    gap: 12px 12px;
+    grid-template-columns: repeat(11,1fr);
+    grid-template-rows: 60px 300px 1000px 250px;
+    overflow: hidden;
+}
+
+.master>div,section{
+    border: 1px solid red;
+    background-color: #ECF0F1;
+    border-radius: 5px;
+}
+
+.header{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+
+.container1{
+    grid-column: 3/-1;
+    grid-row: 2/3;
+    row-gap: 20px; 
+}
+
+.sidebar{
+    grid-column: 1/3;
+    grid-row: 2/4;
+}
+
+.content{
+    grid-column: 3/-1;
+    grid-row: 3/4;
+}
+
+.footer{
+    grid-column: 1/-1;
+    grid-row: 4/5;
+}
+
